@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Librería BL</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+
+<img src="img/logo.png.jpeg" alt="Logo de la Librería BL">
+
+<h1>Librería BL</h1>
+
+<p>Descubre historias que inspiran y transforman</p>
+
+</header>
+
+
+<nav>
+
+<a href="#">Catálogo</a>
+
+</nav>
+
+
+<section class="container">
+
+
+<div class="book">
+<img src="img/libro1.jpg" alt="Don Quijote De La Mancha">
+
+<h3>Don Quijote De La Mancha</h3>
+
+<p class="price">$18.500</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>   
+
+
+
+<div class="book">
+
+<img src="img/libro 2.jpg" alt="Mi Psicóloga Me Dijo">
+
+<h3>Mi Psicóloga Me Dijo</h3>
+
+<p class="price">$28.000</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>
+
+
+<div class="book">
+
+<img src="img/libro3.jpg" alt="Libro Amor Fati">
+
+<h3>Amor Fati</h3>
+
+<p class="price">$32.000</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>
+
+
+
+<div class="book">
+
+<img src="img/libro4.jpg" alt="Libro El Principito">
+
+<h3>El Principito</h3>
+
+<p class="price">$28.000</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>
+
+
+
+<div class="book">
+
+<img src="img/libro5.jpg" alt="Hábitos Atómicos">
+
+<h3>Hábitos Atómicos</h3>
+
+<p class="price">$35.000</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>
+
+
+
+<div class="book">
+
+<img src="img/libro6.jpg" alt="El Poder del Ahora">
+
+<h3>El Poder Del Ahora</h3>
+
+<p class="price">$30.000</p>
+
+<button onclick="leer()">Leer</button>
+<button onclick="abrirCompra()">Comprar</button>
+
+</div>
+
+</section>
+
+
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<h2>Muestra del libro</h2>
+
+<p>
+Este es un pequeño fragmento del libro. Aquí podrías mostrar
+las primeras páginas del contenido para que el lector
+pueda conocer la historia antes de comprarlo.
+</p>
+
+<button onclick="cerrar()">Cerrar</button>
+
+</div>
+
+</div>
+
+
+
+<div class="modal" id="compraModal">
+
+<div class="modal-content">
+
+<h2>Datos del comprador</h2>
+
+<label>Nombre completo:</label>
+<input type="text" placeholder="Ingrese su nombre">
+
+<label>Correo electrónico:</label>
+<input type="email" placeholder="Ingrese su correo">
+
+<label>Dirección de envío:</label>
+<input type="text" placeholder="Ingrese su dirección">
+
+<label>Método de pago:</label>
+
+<select>
+
+<option>Tarjeta de crédito</option>
+<option>Tarjeta débito</option>
+<option>PSE</option>
+<option>Pago contra entrega</option>
+
+</select>
+
+<br><br>
+
+<button onclick="confirmarCompra()">Confirmar compra</button>
+
+<button onclick="cerrarCompra()">Cancelar</button>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Librería BL - Tu Librería Favorita</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
